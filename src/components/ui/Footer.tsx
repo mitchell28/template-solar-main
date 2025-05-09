@@ -11,36 +11,31 @@ const CURRENT_YEAR = new Date().getFullYear()
 const Footer = () => {
   const sections = {
     solutions: {
-      title: "Solutions",
+      title: "Services",
       items: [
-        { label: "Crop Monitoring", href: "#" },
-        { label: "Irrigation Control", href: "#" },
-        { label: "Soil Analytics", href: "#" },
-        { label: "Weather Integration", href: "#" },
-        { label: "Documentation", href: "#" },
-        { label: "Smart Farming Guide", href: "#" },
-        { label: "Equipment", href: "#" },
+        { label: "District Cooling", href: "/services/district-cooling" },
+        { label: "Energy Retrofits", href: "/services/energy-retrofits" },
+        { label: "Facilities Management", href: "/services/facilities-management" },
+        { label: "Renewable Energy", href: "/services/renewable-energy" },
+        { label: "Energy Efficiency", href: "#" },
+        { label: "Sustainability", href: "#" },
       ],
     },
     company: {
       title: "Company",
       items: [
         { label: "About us", href: "#" },
-        { label: "Blog", href: "#" },
+        { label: "News", href: "#" },
         { label: "Careers", href: "#" },
-        { label: "Success Stories", href: "#" },
+        { label: "Case Studies", href: "/case-studies" },
         { label: "Sustainability", href: "#" },
       ],
     },
     resources: {
       title: "Resources",
       items: [
-        { label: "Farmer Network", href: "#" },
-        {
-          label: "Community",
-          href: "#",
-          external: true,
-        },
+        { label: "Knowledge Center", href: "#" },
+        { label: "ESG Report", href: "#" },
         { label: "Contact", href: "#" },
         { label: "Support", href: "#" },
         { label: "Privacy Policy", href: "#" },
@@ -51,10 +46,10 @@ const Footer = () => {
     partners: {
       title: "Partners",
       items: [
-        { label: "Dealer Network", href: "#", external: true },
+        { label: "Technology Partners", href: "#", external: true },
         { label: "System Status", href: "#", external: true },
-        { label: "Research Partners", href: "#", external: true },
-        { label: "Integration Guide", href: "#" },
+        { label: "Government Relations", href: "#", external: true },
+        { label: "Consultants", href: "#" },
       ],
     },
   }
@@ -146,9 +141,9 @@ const Footer = () => {
             href="/"
             className="flex items-center font-medium text-gray-700 select-none sm:text-sm"
           >
-            <SolarLogo className="ml-2 w-20" />
+            <SolarLogo className="ml-2 h-8 w-auto" />
 
-            <span className="sr-only">Solar Logo (go home)</span>
+            <span className="sr-only">ENGIE Solutions Logo (go home)</span>
           </Link>
 
           <div>
@@ -188,7 +183,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="ml-2 hidden text-sm text-gray-700 lg:inline">
-              &copy; {CURRENT_YEAR} Solar Technologies, Inc.
+              &copy; {CURRENT_YEAR} ENGIE Solutions Middle East
             </div>
           </div>
         </div>
