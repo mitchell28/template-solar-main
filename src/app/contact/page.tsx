@@ -44,7 +44,7 @@ export default function ContactPage() {
                 </div>
               </div>
             ))}
-          </p>
+          </div>
         </div>
         
         <div className="relative">
@@ -84,8 +84,6 @@ export default function ContactPage() {
                 <Button type="submit" className="w-full">Send Message</Button>
               </form>
             </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
