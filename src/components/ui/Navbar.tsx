@@ -30,14 +30,14 @@ export function NavBar() {
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">
-              <Link className="px-2 py-1 text-gray-900" href="#solutions">
-                Solutions
+              <Link className="px-2 py-1 text-gray-900" href="/services">
+                Services
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#farm-management">
-                Farm Management
+              <Link className="px-2 py-1 text-gray-900" href="/case-studies">
+                Case Studies
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
-                Analytics
+              <Link className="px-2 py-1 text-gray-900" href="/contact">
+                Contact
               </Link>
             </div>
           </nav>
@@ -74,13 +74,13 @@ export function NavBar() {
         >
           <ul className="space-y-4 font-medium">
             <li onClick={() => setOpen(false)}>
-              <Link href="#solutions">Solutions</Link>
+              <Link href="/services">Services</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#farm-management">Farm Management</Link>
+              <Link href="/case-studies">Case Studies</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#solar-analytics">Analytics</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
           <Button variant="secondary" className="text-lg rounded-full">
