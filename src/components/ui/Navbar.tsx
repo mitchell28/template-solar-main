@@ -16,7 +16,7 @@ export function NavBar() {
   return (
     <header
       className={cx(
-        "fixed inset-x-4 top-4 z-50 mx-auto flex max-w-6xl justify-center rounded-lg border border-transparent px-3 py-3 transition duration-300",
+        "fixed inset-x-4 top-4 z-50 mx-auto flex max-w-6xl justify-center rounded-lg border border-transparent px-3 py-3 transition duration-300 backdrop-blur-[1px]",
         scrolled || open
           ? "border-gray-200/50 bg-white/80 shadow-2xl shadow-black/5 backdrop-blur-sm"
           : "bg-white/0",
@@ -26,7 +26,7 @@ export function NavBar() {
         <div className="relative flex items-center justify-between">
           <Link href={siteConfig.baseLinks.home} aria-label="Home">
             <span className="sr-only">Solar Tech Logo</span>
-            <SolarLogo className="w-22" />
+            <SolarLogo className="h-8 w-auto" />
           </Link>
           <nav className="hidden sm:block md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:transform">
             <div className="flex items-center gap-10 font-medium">

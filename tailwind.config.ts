@@ -4,10 +4,14 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}", 
+    "./public/**/*.tsx",
   ],
   theme: {
     extend: {
+      spacing: {
+        '22': '5.5rem',
+      },
       backgroundImage: {
         "linear-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
         "linear-to-tr": "linear-gradient(to top right, var(--tw-gradient-stops))",
