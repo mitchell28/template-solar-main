@@ -18,16 +18,21 @@ const GameOfLife = () => {
     const rows = Math.floor(canvas.height / cellSize)
     const transitionSpeed = 0.2 // Controls fade speed
 
-    let grid: Grid = Array(rows)
-      .fill(null)
-      .map(() =>
-        Array(cols)
-          .fill(null)
-          .map(() => ({
-            alive: Math.random() > 0.85,
-            opacity: Math.random() > 0.85 ? 0.5 : 0,
-          })),
-      )
+    // Initialize grid inside the effect to ensure client-side only execution
+    const initializeGrid = (): Grid => {
+      return Array(rows)
+        .fill(null)
+        .map(() =>
+          Array(cols)
+            .fill(null)
+            .map(() => ({
+              alive: Math.random() > 0.85,
+              opacity: Math.random() > 0.85 ? 0.5 : 0,
+            }))
+        )
+    }
+
+    let grid = initializeGrid()
 
     const countNeighbors = (grid: Grid, x: number, y: number): number => {
       let sum = 0
