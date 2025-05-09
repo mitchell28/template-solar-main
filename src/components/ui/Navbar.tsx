@@ -43,7 +43,7 @@ export function NavBar() {
           </nav>
           <Button
             variant="secondary"
-            className="hidden h-10 font-semibold sm:block"
+            className="hidden h-10 font-semibold rounded-full sm:block"
           >
             Get a quote
           </Button>
@@ -83,7 +83,7 @@ export function NavBar() {
               <Link href="#solar-analytics">Analytics</Link>
             </li>
           </ul>
-          <Button variant="secondary" className="text-lg">
+          <Button variant="secondary" className="text-lg rounded-full">
             Get a quote
           </Button>
         </nav>
