@@ -1,10 +1,8 @@
 import { CallToAction } from "@/components/ui/CallToAction"
-import FeatureDivider from "@/components/ui/FeatureDivider"
-import Features from "@/components/ui/Features"
 import { Hero } from "@/components/ui/Hero"
-import { Map } from "@/components/ui/Map/Map"
-import { SolarAnalytics } from "@/components/ui/SolarAnalytics"
-import Testimonial from "@/components/ui/Testimonial"
+import { Services } from "@/components/ui/Services"
+import { CaseStudies } from "@/components/ui/CaseStudies"
+import { ContactSection } from "@/components/ui/ContactSection"
 
 export default function Home() {
   return (
@@ -12,21 +10,16 @@ export default function Home() {
       <div className="pt-56">
         <Hero />
       </div>
-      <div className="mt-52 px-4 xl:px-0">
-        <Features />
-      </div>
       <div className="mt-32 px-4 xl:px-0">
-        <Testimonial />
+        <Services />
       </div>
-      <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="px-4 xl:px-0">
-        <Map />
+      <div className="mt-24 px-4 xl:px-0">
+        <CaseStudies />
       </div>
-      <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mt-12 mb-40 px-4 xl:px-0">
-        <SolarAnalytics />
+      <div className="mt-24 mb-40 px-4 xl:px-0">
+        <ContactSection />
       </div>
-      <div className="mt-10 mb-40 px-4 xl:px-0">
+      <div className="mt-16 mb-40 px-4 xl:px-0">
         <CallToAction />
       </div>
     </main>
